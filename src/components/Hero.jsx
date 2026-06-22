@@ -5,25 +5,20 @@ function Hero() {
 
   return (
     <section id="hero" className="hero">
+      <div className="hero-overlay" />
       <div className="hero-content">
-        <p className="hero-tagline">Nutrition & Wellness</p>
-        <h1>Eat Glow Fit <span className="hero-highlight">with Arthi</span></h1>
+        <img src="/logo.jpg" alt="Eat Glow Fit with Arthi" className="hero-logo" />
         <p className="hero-description">
-          Blending traditional wisdom with modern nutrition science to help you
-          nourish your body, glow from within, and feel your best every day.
+          Personalized coaching to help you eat better, glow from within, and
+          get fit — with programs designed around your lifestyle and goals.
         </p>
         <div className="hero-buttons">
-          <button className="btn btn-primary" onClick={() => scrollTo('services')}>
-            Explore Services
+          <a href="https://calendly.com/glow-fit-with-me/30min" target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+            Book a Free Clarity Call
+          </a>
+          <button className="btn btn-secondary" onClick={() => scrollTo('services')}>
+            Explore Programs
           </button>
-          <button className="btn btn-secondary" onClick={() => scrollTo('contact')}>
-            Book a Consultation
-          </button>
-        </div>
-      </div>
-      <div className="hero-visual">
-        <div className="hero-circle">
-          <span className="hero-emoji">🥗</span>
         </div>
       </div>
     </section>

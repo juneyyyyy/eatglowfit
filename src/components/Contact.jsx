@@ -1,71 +1,59 @@
+import { Calendar, WhatsApp, Instagram, YouTube, Facebook, LinkedIn } from './Icons'
+
 function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="section-header">
-        <p className="section-label">Contact</p>
-        <h2>Let's Start Your Wellness Journey</h2>
+        <p className="section-label">Get Started</p>
+        <h2>Ready to Transform?</h2>
         <p className="section-subtitle">
-          Ready to transform your relationship with food? Reach out to Arthi
-          for a personalized consultation.
+          Book a free 30-minute clarity call or send a message — let's talk about your goals.
         </p>
       </div>
-      <div className="contact-content">
-        <div className="contact-info">
-          <div className="contact-item">
-            <span className="contact-icon">📧</span>
-            <div>
-              <h4>Email</h4>
-              <p>eatglowfit@gmail.com</p>
-            </div>
+      <div className="contact-actions">
+        <a
+          href="https://calendly.com/glow-fit-with-me/30min"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-action-card"
+        >
+          <div className="contact-action-icon-wrap">
+            <Calendar size={28} />
           </div>
-          <div className="contact-item">
-            <span className="contact-icon">📱</span>
-            <div>
-              <h4>Phone</h4>
-              <p>+91 XXXXX XXXXX</p>
-            </div>
+          <h3>Book a Free Clarity Call</h3>
+          <p>Schedule a 30-minute call to discuss your goals and find the right program for you.</p>
+          <span className="contact-action-btn">Book Now &rarr;</span>
+        </a>
+        <a
+          href="https://wa.me/message/P4GGRLGGGNYHH1"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-action-card"
+        >
+          <div className="contact-action-icon-wrap whatsapp">
+            <WhatsApp size={28} />
           </div>
-          <div className="contact-item">
-            <span className="contact-icon">📍</span>
-            <div>
-              <h4>Location</h4>
-              <p>United States (Virtual consultations available nationwide)</p>
-            </div>
-          </div>
-          <div className="contact-item">
-            <span className="contact-icon">📸</span>
-            <div>
-              <h4>Instagram</h4>
-              <p>@eatglowfit</p>
-            </div>
-          </div>
-          <div className="contact-item">
-            <span className="contact-icon">💼</span>
-            <div>
-              <h4>LinkedIn</h4>
-              <p>
-                <a href="https://www.linkedin.com/in/arthi-geetha-sundar-1540942b/" target="_blank" rel="noopener noreferrer">Arthi Geetha Sundar</a>
-                {' · '}
-                <a href="https://www.linkedin.com/company/eatglowfit-arthi/" target="_blank" rel="noopener noreferrer">Eat Glow Fit</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
-          <div className="form-group">
-            <label htmlFor="name">Name</label>
-            <input type="text" id="name" placeholder="Your name" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" placeholder="Your email" />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Tell me about your health goals..."></textarea>
-          </div>
-          <button type="submit" className="btn btn-primary">Send Message</button>
-        </form>
+          <h3>Message on WhatsApp</h3>
+          <p>Have a quick question? Send a message and I'll get back to you as soon as I can.</p>
+          <span className="contact-action-btn">Message Now &rarr;</span>
+        </a>
+      </div>
+      <div className="contact-socials">
+        <a href="https://www.instagram.com/eatglowfit.arthi" target="_blank" rel="noopener noreferrer" className="social-link">
+          <Instagram size={18} /> Instagram
+        </a>
+        <a href="https://www.youtube.com/@eatglowfit_arthi" target="_blank" rel="noopener noreferrer" className="social-link">
+          <YouTube size={18} /> YouTube
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61557344499892" target="_blank" rel="noopener noreferrer" className="social-link">
+          <Facebook size={18} /> Facebook
+        </a>
+        <a href="https://www.linkedin.com/in/arthi-geetha-sundar-1540942b/" target="_blank" rel="noopener noreferrer" className="social-link">
+          <LinkedIn size={18} /> LinkedIn
+        </a>
+        <a href="https://www.linkedin.com/company/eatglowfit-arthi/" target="_blank" rel="noopener noreferrer" className="social-link">
+          <LinkedIn size={18} /> Business Page
+        </a>
       </div>
     </section>
   )

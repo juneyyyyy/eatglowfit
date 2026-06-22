@@ -1,3 +1,5 @@
+import { Play } from './Icons'
+
 function About() {
   return (
     <section id="about" className="about">
@@ -8,37 +10,29 @@ function About() {
       <div className="about-content">
         <div className="about-image">
           <div className="about-image-placeholder">
-            <span>🧑‍⚕️</span>
+            <span>Photo</span>
           </div>
         </div>
         <div className="about-text">
           <p>
-            Arthi is a passionate nutrition and wellness consultant who believes that
-            the best health solutions often come from the wisdom of our own kitchens.
-            With a deep understanding of both traditional Indian food practices and
-            modern nutritional science, she helps clients rediscover the power of
-            wholesome, time-tested foods.
+            Placeholder bio — replace with Arthi's story, background, certifications,
+            and what inspired her to start Eat Glow Fit. Share your passion for
+            helping clients transform their health through nutrition and fitness.
           </p>
           <p>
-            At <strong>Eat Glow Fit</strong>, the philosophy is simple: nourish your
-            body with real, whole foods that have sustained generations. From the
-            gut-friendly fermented foods of Indian kitchens to balanced meal plans
-            tailored to your unique needs, Arthi guides you on a journey to better
-            health without fads or extremes.
+            Placeholder — describe your coaching philosophy, your approach to
+            wellness, and what makes Eat Glow Fit different. Mention your
+            experience and the results your clients have achieved.
           </p>
-          <div className="about-stats">
-            <div className="stat">
-              <span className="stat-icon">🌿</span>
-              <span className="stat-label">Holistic Approach</span>
-            </div>
-            <div className="stat">
-              <span className="stat-icon">🍽️</span>
-              <span className="stat-label">Traditional Wisdom</span>
-            </div>
-            <div className="stat">
-              <span className="stat-icon">💪</span>
-              <span className="stat-label">Science-Backed</span>
-            </div>
+          <div className="about-video">
+            <a href="https://youtu.be/5XIb8SG0Zww" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
+              <Play size={16} /> Watch My Story
+            </a>
+          </div>
+          <div className="about-pills">
+            <span className="pill">Meal Plans</span>
+            <span className="pill">Fitness Coaching</span>
+            <span className="pill">Glow & Wellness</span>
           </div>
         </div>
       </div>
