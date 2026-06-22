@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --purple-dark: #4a1942;
+  --purple: #6b2a6e;
+  --purple-light: #8b3d8e;
+  --purple-pale: #f3e8f4;
+  --gold: #d4a843;
+  --gold-light: #e8c96e;
+  --gold-pale: #fdf6e3;
+  --cream: #faf8f5;
+  --text: #2c2c2c;
+  --text-light: #5a5a5a;
+  --text-muted: #888;
+  --white: #ffffff;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
+  --radius: 12px;
+  --radius-lg: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Bebas Neue', Impact, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--purple-dark);
+}
+
+a {
+  color: var(--purple);
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+img {
+  max-width: 100%;
+}
