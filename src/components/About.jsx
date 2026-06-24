@@ -1,4 +1,5 @@
 import { Play } from './Icons'
+import arthiPhoto from '../assets/arthi.jpg'
 
 function About() {
   return (
@@ -9,20 +10,21 @@ function About() {
       </div>
       <div className="about-content">
         <div className="about-image">
-          <div className="about-image-placeholder">
-            <span>Photo</span>
-          </div>
+          <img src={arthiPhoto} alt="Eat Glow Fit Coaching" className="about-photo" />
         </div>
         <div className="about-text">
           <p>
-            Placeholder bio — replace with Arthi's story, background, certifications,
-            and what inspired her to start Eat Glow Fit. Share your passion for
-            helping clients transform their health through nutrition and fitness.
+            I know what it feels like to struggle — to juggle a demanding career, a busy
+            family life, and still try to show up for your own health. That struggle is
+            exactly what led me to coaching. I needed guidance myself, and when I found
+            the right approach, everything changed.
           </p>
           <p>
-            Placeholder — describe your coaching philosophy, your approach to
-            wellness, and what makes Eat Glow Fit different. Mention your
-            experience and the results your clients have achieved.
+            Now I help working professionals who feel the same way. My focus is on
+            realistic, sustainable plans that fit into your actual lifestyle — not an
+            imaginary one. I've dedicated myself to integrating balanced nutrition and
+            effective workouts into the rhythm of a busy life, because I believe taking
+            care of yourself shouldn't require giving up everything else.
           </p>
           <div className="about-video">
             <a href="https://youtu.be/5XIb8SG0Zww" target="_blank" rel="noopener noreferrer" className="btn btn-outline">
