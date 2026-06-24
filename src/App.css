@@ -260,8 +260,8 @@
 }
 
 .about-photo {
-  width: 320px;
-  height: 400px;
+  width: 360px;
+  height: 420px;
   border-radius: var(--radius-lg);
   object-fit: cover;
   object-position: center top;
@@ -303,32 +303,48 @@
   background: var(--cream);
 }
 
-.services-grid {
+.programs-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-  max-width: 900px;
+  gap: 32px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
-.service-card {
+.program-card {
   background: var(--white);
-  padding: 40px 32px;
-  border-radius: var(--radius);
+  padding: 44px 36px;
+  border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   transition: all 0.3s ease;
   text-align: left;
-  text-decoration: none;
-  color: inherit;
   display: flex;
   flex-direction: column;
-  border-left: 4px solid transparent;
+  border: 2px solid transparent;
+  position: relative;
 }
 
-.service-card:hover {
+.program-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-left-color: var(--gold);
+}
+
+.program-card--highlighted {
+  border-color: var(--gold);
+}
+
+.program-badge {
+  position: absolute;
+  top: -14px;
+  left: 36px;
+  background: var(--gold);
+  color: var(--purple-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 5px 16px;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .service-number {
@@ -340,30 +356,52 @@
   margin-bottom: 12px;
 }
 
-.service-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 12px;
+.program-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
   color: var(--purple-dark);
 }
 
-.service-card p {
+.program-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+
+.program-description {
   font-size: 0.95rem;
   color: var(--text-light);
-  line-height: 1.6;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.program-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
   flex: 1;
 }
 
-.service-cta {
-  display: inline-block;
-  margin-top: 20px;
+.program-features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--purple);
-  transition: color 0.2s;
+  color: var(--text);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.service-card:hover .service-cta {
+.program-features li svg {
   color: var(--gold);
+  flex-shrink: 0;
+}
+
+.program-cta {
+  align-self: flex-start;
 }
 
 /* ===== TESTIMONIALS ===== */
@@ -690,8 +728,8 @@
   }
 
   .about-photo {
-    width: 220px;
-    height: 280px;
+    width: 280px;
+    height: 340px;
     margin: 0 auto;
   }
 
@@ -713,7 +751,7 @@
     font-size: 2.2rem;
   }
 
-  .services-grid,
+  .programs-grid,
   .testimonials-grid {
     grid-template-columns: 1fr;
   }
