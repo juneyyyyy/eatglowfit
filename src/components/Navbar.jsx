@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-brand" onClick={() => scrollTo('hero')}>
-        <img src="/logo.jpg" alt="Eat Glow Fit" className="navbar-logo" />
+        <img src="/logo.png" alt="Eat Glow Fit" className="navbar-logo" />
       </div>
       <button
         className={`menu-toggle ${menuOpen ? 'open' : ''}`}

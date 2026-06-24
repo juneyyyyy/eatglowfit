@@ -7,7 +7,7 @@ function Hero() {
     <section id="hero" className="hero">
       <div className="hero-overlay" />
       <div className="hero-content">
-        <img src="/logo.jpg" alt="Eat Glow Fit with Arthi" className="hero-logo" />
+        <img src="/logo.png" alt="Eat Glow Fit with Arthi" className="hero-logo" />
         <p className="hero-description">
           Personalized coaching to help you eat better, glow from within, and
           get fit — with programs designed around your lifestyle and goals.

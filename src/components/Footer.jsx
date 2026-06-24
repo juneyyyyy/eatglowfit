@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <img src="/logo.jpg" alt="Eat Glow Fit with Arthi" className="footer-logo" />
+        <img src="/logo.png" alt="Eat Glow Fit with Arthi" className="footer-logo" />
         <p className="footer-tagline">
           Eat better. Glow from within. Get fit.
         </p>
