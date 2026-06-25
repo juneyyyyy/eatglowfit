@@ -14,7 +14,6 @@ const programs = [
       'Customized workout guidance',
       'Lifestyle & habit integration',
     ],
-    link: 'https://buy.stripe.com/eVq4gB1uT9jQ51ydVD8bS04',
     highlighted: true,
   },
   {
@@ -30,7 +29,6 @@ const programs = [
       'Lifestyle & fitness challenges',
       'WhatsApp chat support',
     ],
-    link: 'https://buy.stripe.com/28EfZjflJbrYfGc3gZ8bS03',
     highlighted: false,
   },
 ]
@@ -65,14 +63,12 @@ function Services() {
                 </li>
               ))}
             </ul>
-            <a
-              href={program.link}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className={`btn ${program.highlighted ? 'btn-primary' : 'btn-outline'} program-cta`}
             >
-              Get Started
-            </a>
+              Contact Me
+            </button>
           </div>
         ))}
       </div>
